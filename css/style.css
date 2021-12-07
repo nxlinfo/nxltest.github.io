@@ -160,6 +160,11 @@ li:hover img{
 	border:solid #aaa;
 
 }
+.menu{
+	/*background-color: red;*/
+	width: 85vw;
+	height: 17vw;
+}
 #bodys li p{
 	position: absolute;
 	top: 29%;
@@ -306,4 +311,13 @@ li:hover img{
 }
 .fa-heart:hover{
 	color: red;
+}
+#banner{
+	/*z-index: 1;*/
+	width: 40vw;
+	height: 40vw;
+	/*background-color: red;*/
+	/*background-image: url('./assests/noel.png');*/
+	position: fixed;
+	bottom: 10vw;
 }
