@@ -16,6 +16,9 @@ body{
 	height:50vw;
 	/*background-color: #0D0E0E;*/
 }
+a{
+	text-decoration: none;
+}
 #header #face{
 	position: absolute;
 	top:12%;
@@ -28,31 +31,15 @@ body{
 	border-radius: 100%;
 	border:solid #ccc;
 }
-#header #face:active{
-	z-index: 2;
-	position: absolute;
-	top:0;
-	left: 0;
-	width: 100vw;
-	height: 100vw;
-	border-radius: 0;  
-}
-/*#face img{
-	position: absolute;
-	background-size: 100%;
-}*/
 #header #name{
-	/*position: absolute;*/
-	/*background-color: red;	*/
 	width: 100vw;
 	height: 10vw;
 	position: absolute;
 	top:84%;
 	color:black;
-	font-weight: 570;
+	font-weight: 550;
 	font-size: 30px;
 	text-align: center;
-	/*font-style: ;*/
 }
 #header #age{
 	color:white;
@@ -136,18 +123,21 @@ ul li img{
 	width: 14vw;
 	height: 14vw;
 }
+li:hover img{
+	background-color: pink;
+}
 #donate{
-	background-color: black;
+	background-color: #ccc;
 	width: 40vw;
 	height: 15vw;
 	position: absolute;
-	top: 122vw;
+	top: 123vw;
 	left: 28vw;
 	border-radius: 3vw;
-	border:solid #ccc;
+	border:solid #aaa;
 }
 #donate p{
-	color: white;
+	color: black;
 	font-size: 7vw;
 	margin:3.5vw; 
 	text-align: center;
@@ -155,35 +145,70 @@ ul li img{
 #donate:hover{
 	background-color: pink;
 }
+#bodys{
+	margin-top: 7vw;
+}
+#bodys ul li{
+	margin-top: 2vw;
+	height: 17vw;
+	width: 85vw;
+	position: relative;
+	left: 7vw;
+	background-color: #ccc;
+	list-style-type: none;
+	border-radius: 6vw;
+	border:solid #aaa;
+
+}
+#bodys li p{
+	position: absolute;
+	top: 29%;
+	left: 27%;
+	color:black;
+	font-weight: 600;
+	font-size: 6vw;
+}
+#bodys li p1{
+	color: black;
+	position: absolute;
+	top:71%;
+	left: 28%;
+}
+#bodys li p2{
+	position: absolute;
+	right:10%;
+	display: none;
+}
 #idmomo{
 	background-image: url('https://nxlinfo.github.io/assests/momo.jpg');
-	width: 16vw;
-	height: 16vw;
+	width: 14vw;
+	height: 14vw;
 	background-size: 100%;
 	position: absolute;
-	top:10%;
+	top:9%;
 	left: 4%;
 	border-radius: 6vw;
 }
 #idviettel{
 	background-image: url('https://nxlinfo.github.io/assests/unnamed.png');
-	width: 16vw;
-	height: 16vw;
+	width: 14vw;
+	height: 14vw;
 	background-size: 100%;
 	position: absolute;
-	top:10%;
+	top:9%;
 	left: 4%;
 	border-radius: 6vw;
 }
 #idviettin{
 	z-index: 2;
 	background-image: url('https://nxlinfo.github.io/assests/viettin.png');
-	width: 16vw;
-	height: 16vw;
+	width: 14vw;
+	height: 14vw;
 	background-size: 100%;
 	position: absolute;
-	top:10%;
+	top:9%;
 	left: 4%;
+	border-radius: 6vw;
 	/*border-radius: 6vw;*/
 }
 
@@ -271,4 +296,14 @@ ul li img{
 	animation-name:play;
     animation-duration:2s;
     animation-iteration-count:infinite;
+}
+.fa-heart{
+	position: absolute;
+	right:3%;
+	top:3%;
+	font-size: 6vw;
+	color:#ccc;
+}
+.fa-heart:hover{
+	color: red;
 }
