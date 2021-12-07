@@ -15,7 +15,6 @@ body{
 	width: 100vw;
 	height:50vw;
 	/*background-color: #0D0E0E;*/
-	
 }
 #header #face{
 	position: absolute;
@@ -29,6 +28,15 @@ body{
 	border-radius: 100%;
 	border:solid #ccc;
 }
+#header #face:active{
+	z-index: 2;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100vw;
+	height: 100vw;
+	border-radius: 0;  
+}
 /*#face img{
 	position: absolute;
 	background-size: 100%;
@@ -41,6 +49,7 @@ body{
 	position: absolute;
 	top:84%;
 	color:black;
+	font-weight: 570;
 	font-size: 30px;
 	text-align: center;
 	/*font-style: ;*/
@@ -66,8 +75,9 @@ body{
 	position:absolute;
 	/*background-color: red;*/
 }
-#bodyssul{
+#bodyss ul{
 	position: relative;
+	top:2vw;
 }
 #bodyss ul li{
 	position: relative;
@@ -100,7 +110,7 @@ body{
 	position: absolute;
 	width: 100vw;
 	height:15vw;
-	top:97vw;
+	top:100vw;
 }
 #body2 ul{
 	position: relative;
@@ -115,6 +125,7 @@ body{
 	height: 14vw;
 	z-index: 2;
 	border-radius:5vw;
+	/*border: solid #ccc;*/
 }
 #body2 ul i{
 	font-size: 14vw;
@@ -130,10 +141,10 @@ ul li img{
 	width: 40vw;
 	height: 15vw;
 	position: absolute;
-	top: 118vw;
+	top: 122vw;
 	left: 28vw;
 	border-radius: 3vw;
-	border:solid pink;
+	border:solid #ccc;
 }
 #donate p{
 	color: white;
