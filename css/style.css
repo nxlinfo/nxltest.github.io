@@ -315,8 +315,8 @@ li:hover img{
 #banner{
 	z-index: -1;
 	/*background-image:url(./noel.png);*/
-	width: 80px;
-	height: 80px;
+	width: 110px;
+	height: 110px;
 	position: fixed;
 	bottom: 0vw;
 	/*background-size: contain;*/
@@ -328,5 +328,8 @@ li:hover img{
 	height: 100%;
 }
 #sl2{
+	display: none;
+}
+#sl3{
 	display: none;
 }

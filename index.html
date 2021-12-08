@@ -72,8 +72,8 @@
     	</a>
     </div>
     <div id="banner">
-        <img src="./assests/hoa-dao.png" class="slide" id="sl1">
-
+        <img src="./assests/trungthu1.png" class="slide" id="sl1">
+        <img src="./assests/summer.png" class="slide" id="sl3">
         <img src="./assests/noel.png" class="slide" id="sl2">
        <!--  <img src="./assests/noel.png" class="slide">
         <img src="./assests/noel.png" class="slide">
@@ -81,19 +81,26 @@
 </body>
 <script>
         var now = new Date().getMonth();
-        now=now+1;
+        now=now+3;
         if(now==12){
         document.getElementById("sl2").style.display = 'block';
+        document.getElementById("sl3").style.display = 'none';
 
         document.getElementById("sl1").style.display = 'none';
 
         // document.getElementById("sl2").style.display = 'block';
 
-       } else if (now==1||now==2) {
-       	document.getElementById("sl1").style.display = 'block';
-
+       } else if (now==13||now==2) {
+       	
+ 		document.getElementById("sl3").style.display = 'block';
         document.getElementById("sl2").style.display = 'none';
 
+        document.getElementById("sl1").style.display = 'none';
+       }else if (now==3) {
+       	 document.getElementById("sl1").style.display = 'block';
+        document.getElementById("sl3").style.display = 'none';
+
+        document.getElementById("sl1").style.display = 'none';
        }
     var sound = new Audio("sound.mp3");
 
