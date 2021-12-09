@@ -12,17 +12,25 @@
 </head>
 
 <body>
-    
-    <!-- <div id="menu1">
-        <div id="navmenu">
-            <ul>
+	<!-- <i class="fas fa-ellipsis-h" ></i> -->
+    <div class="dropdown">
+  <button class="nut_dropdown">Dropdown</button>
+  <div class="noidung_dropdown">
+    <a href="#">Đường Dẫn 1</a>
+    <a href="#">Đường Dẫn 2</a>
+    <a href="#">Đường Dẫn 3</a>
+  </div>
+</div>
+    <div id="menu1">
+			<i class="fas fa-ellipsis-h" onclick="opena()" ></i>
+            <ul id="navmenu">
                <li onclick="chuyen1"><p>SPRING</p></li>
                 <li onclick="chuyen2"><p>SUMMER</p></li>
                 <li><p>AUTUMN</p></li>
                 <li><p>WINTERs</p></li>
             </ul>
-        </div>
-    </div> -->
+    </div>
+
     <div id="header">
         <div id="face">
         </div>
@@ -97,6 +105,11 @@
     </div>
 </body>
 <script>
+	 function opena(){
+    	alert("hello");
+        document.getElementById("navmenu").style.display = 'block';
+
+    }
         var now = new Date().getMonth();
         now=now+1;
         if(now==12||now==	11){
@@ -115,10 +128,10 @@
        	 document.getElementById("tet1").style.display = 'block';
        }
     var sound = new Audio("sound.mp3");
-    // function open(){
-    // 	// document.getElementById("#navmenu").style.display = 'block';
-    // 	alert("hello");
-    // }
+    function open(){
+    	// document.getElementById("#navmenu").style.display = 'block';
+    	alert("hello");
+    }
     function myFunction2() {
         var coyText = document.getElementById("idmail");
         var input = document.createElement("INPUT");

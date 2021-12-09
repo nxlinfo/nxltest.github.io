@@ -256,6 +256,7 @@ li:hover img{
 	top:4vw;
 	right: 0vw;
 	border-radius: 2vw;	
+	z-index: 3;
 }
 #menu1 i{
 	position: absolute;
@@ -265,19 +266,17 @@ li:hover img{
 	color: #ccc;
 	/*background-color: yellow;*/
 }
-#navmenu{
-	/*display: none;*/
+#menu1 #navmenu{
+	background-color: red;	
+	display: none;
 	position: absolute;
-	top:10%;
+	top:-5%;
 	width: 100%;
 	height: 100%;
+	border-radius: 2vw;
 }
-#navmenu ul{
-	width: 100%;
-	height: 100%;
-}
-#navmenu ul li{
-	z-index: 2;
+#navmenu li{
+	/*z-index: 2;*/
 	list-style-type: none;
 	position: relative;
 	width: 90%;
@@ -291,6 +290,50 @@ li:hover img{
 	text-align: center;
 	padding-top: 18%;
 }
- /*#menu i:hover i{
-	color: red;
-}*/
+#menu1 i:hover{
+	color:red;
+}
+.nut_dropdown {
+  background-color: #0080ff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* Thiết lập vị trí cho thẻ div với class dropdown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Nội dung Dropdown */
+.noidung_dropdown {
+  /*Ẩn nội dụng các đường dẫn*/
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Thiết kế style cho các đường dẫn tronng Dropdown */
+.noidung_dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* thay đổi màu background khi hover vào đường dẫn */
+.noidung_dropdown a:hover {background-color: #ddd;}
+
+/* hiển thị nội dung dropdown khi hover */
+.dropdown:hover .noidung_dropdown {display: block;}
+
+/* Thay đổi màu background cho nút khi được hover */
+.dropdown:hover .nut_dropdown {background-color: #00bfff;}
+
+/*Dùng Để hiển thị nội dung*/
+.hienThi {display:block;}
