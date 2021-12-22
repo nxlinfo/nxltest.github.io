@@ -10,6 +10,10 @@ body{
 	/*background-color: white;*/
 	position: absolute;
 }
+html,body{
+	height: 100%;
+	width: 100%;
+}
 #header{
 	position: relative;
 	width: 100vw;
@@ -248,8 +252,7 @@ li:hover img{
 	width: 100%;
 	height: 100%;
 }
-#menu1{
-	/*background-color: black;*/
+/*#menu1{
 	width: 25vw;
 	height:60vw;
 	position: absolute;
@@ -264,7 +267,6 @@ li:hover img{
 	right: 10%;
 	font-size: 4vw;
 	color: #ccc;
-	/*background-color: yellow;*/
 }
 #menu1 #navmenu{
 	background-color: red;	
@@ -276,7 +278,6 @@ li:hover img{
 	border-radius: 2vw;
 }
 #navmenu li{
-	/*z-index: 2;*/
 	list-style-type: none;
 	position: relative;
 	width: 90%;
@@ -292,48 +293,135 @@ li:hover img{
 }
 #menu1 i:hover{
 	color:red;
-}
-.nut_dropdown {
+}*/
+/* Nút Dropdown*/
+/*.nut_dropdown {
   background-color: #0080ff;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
 }
-
+*/
 /* Thiết lập vị trí cho thẻ div với class dropdown*/
+/*#sa{
+	position: relative;
+	top:20px;
+	left:20px;
+}*/
 .dropdown {
-  position: relative;
+  z-index: 4;
+  position:relative;
+  /*float: top;*/
+  top:12px;
+  float: right;
+  right: 3vw;
+  display: block;
+  /*background-color: red;*/
   display: inline-block;
+  /*width: 17px;
+  background-color: #ccc;
+  border-radius: 10px;*/
 }
-
+.dropdown i:hover{
+	color:pink;
+}
 /* Nội dung Dropdown */
 .noidung_dropdown {
-  /*Ẩn nội dụng các đường dẫn*/
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  position: fixed;
+  right: 0px;
+  float: left;
+  width: 200px;
+  height: 100%;
+  background-color: #12192c;
   z-index: 1;
+  /*text-align: center;*/
+  display: none;
 }
-
-/* Thiết kế style cho các đường dẫn tronng Dropdown */
-.noidung_dropdown a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.noidung_dropdown>#nickname>p{
+	color:  white;
+	/*background-color: green;*/
+ 	position: absolute;
+ 	font-size: 25px;
+ 	left:23%;
+ 	top:5px;
 }
+.noidung_dropdown #nickname{
+	/*background-color: red;*/
+	width: 100%;
+	height: 35px;
+}
+.fa-home{
+	position: absolute;
+	/*top:10%;*/
+	color: white;
+	left: 5%;
+	top:12px;
+	font-size: 20px;
+}
+#navmenu>li{
+	position: relative;
+	/*border-top: 2px solid #b1154a;*/
+	/*border-bottom: 2px solid #b1154a;*/
+	/*border: solid 1px yellow;*/
+}
+.noidung_dropdown #navmenu{
+	background-color: #12192c;
+	position: relative;
+	top:10px;
+	width: 100%;
+	height: 100%;
+}
+ .menu{
+	/*position: relative;*/
+	width: 100%;
+	/*height: 10vư;*/
+	list-style-type: none;
+	background-color: 
+}
+#navtheme:hover #theme{
+	display: block;
+}
+#navmenu>li>p{
+	color:  #a9aeb7;
 
-/* thay đổi màu background khi hover vào đường dẫn */
-.noidung_dropdown a:hover {background-color: #ddd;}
-
-/* hiển thị nội dung dropdown khi hover */
-.dropdown:hover .noidung_dropdown {display: block;}
-
-/* Thay đổi màu background cho nút khi được hover */
-.dropdown:hover .nut_dropdown {background-color: #00bfff;}
-
-/*Dùng Để hiển thị nội dung*/
-.hienThi {display:block;}
+	padding-top: 10px;
+	font-size: 25px;
+	text-align: center;
+}
+#navmenu>li>i{
+	font-size: 25px;
+	position: absolute;
+	top:15px;
+	left: 7%;
+	color:  #a9aeb7;
+}
+.hienThi{
+	z-index: 3;
+  display:block;
+}
+#theme{
+	display: none;
+	background-color: #11111d;
+}
+#theme li{
+	border:solid 0.1px;
+}
+#theme li p{
+	margin-left: 30%;
+	font-size: 15px;
+	color: #ccc;
+}
+#version{
+	/*background-color: red;*/
+	position: absolute;
+	z-index: 5;
+	bottom:0;
+	width: 100%;
+}
+#version p{
+	color: #ccc;
+	text-align: center;
+	font-size: 20px;	
+}

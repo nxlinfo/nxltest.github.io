@@ -13,19 +13,18 @@
 </head>
 
 <body>
-    <button onclick="open()">TEST</button>
-
-    <i class="fas fa-ellipsis-h" onclick="open()"></i>
-   <div id="menu1">
-        <div id="navmenu">
-            <ul>
-                <li><p>SPRING</p></li>
-                <li><p>SUMMER</p></li>
-                <li><p>AUTUMN</p></li>
-                <li><p>WINTERs</p></li>
-            </ul>
-        </div>
+   <div class="dropdown">
+    <i class="fas fa-ellipsis-h" onclick="hamDropdown()" class="nut_dropdown"></i>
+    <div class="noidung_dropdown">
+        <ul id="navmenu">
+               <li onclick="chuyen1()"><p>SPRING</p></li>
+                <li onclick="chuyen2()"><p>SUMMER</p></li>
+                <li onclick="chuyen3()"><p>AUTUMN</p></li>
+                <li onclick="chuyen4()"><p>WINTER</p></li>
+         </ul>
     </div>
+</div>
+</div>
     <div id="header">
         <div id="face">
         </div>
@@ -67,46 +66,21 @@
 	    	<p>CONTACT</p>		
     	</a>
     </div>
-     <div id="banner">
-                        <!-- <img src="./assests/noel.png"> -->
-        
+    <div id="banner1">
+        <img src="./assests/trungthu.png" class="slide" id="autumn">
+        <img src="./assests/summer1.png" class="slide" id="summer">
+        <img src="./assests/noel1.png" class="slide" id="winter">
+        <img src="./assests/tet1.png" class="slide" id="tet">  
+    </div>
+    <div id="banner">
+        <img src="./assests/trungthu1.png" class="slide" id="autumn1">
+        <img src="./assests/summer.png" class="slide" id="summer1">
+        <img src="./assests/noel.png" class="slide" id="winter1">
+        <img src="./assests/tet.png" class="slide" id="tet1">
     </div>
 </body>
-<script>
-    var sound = new Audio("sound.mp3");
+    <script src="./js/script.js"></script>  
 
-    function myFunction2() {
-        var coyText = document.getElementById("idmail");
-        var input = document.createElement("INPUT");
-        document.body.appendChild(input);
-        input.value = coyText.innerHTML;
-        input.select();
-        input.setSelectionRange(0, 99999);
-        document.execCommand("copy");
-        document.body.removeChild(input);
-        sound.play();
-        document.getElementById("copy3").style.display = 'block';
-        setTimeout(function() {
-            document.getElementById("copy3").style.display = 'none';;
-        }, 500);
-    }
-
-    function myFunction1() {
-        var copText = document.getElementById("idphone");
-        var input = document.createElement("INPUT");
-        document.body.appendChild(input);
-        input.value = copText.innerHTML;
-        input.select();
-        input.setSelectionRange(0, 99999);
-        document.execCommand("copy");
-        document.body.removeChild(input);
-        sound.play();
-        document.getElementById("copy2").style.display = 'block';
-        setTimeout(function() {
-            document.getElementById("copy2").style.display = 'none';;
-        }, 500);
-    }
-</script>
 
 </body>
 
